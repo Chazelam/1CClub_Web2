@@ -1,0 +1,79 @@
+.topheader {
+    z-index: 99999;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    background-color: white;
+    height: 140px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 300;
+    color: #696969;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    bottom: auto;
+}
+
+.logo>a>img {
+    margin-top: -10px;
+    padding-right: 10px;
+    height: 60px;
+}
+
+.logo>a {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: initial;
+}
+
+.banner {
+    background: url('../images/slider.jpg')  #696969;
+    background-blend-mode: multiply,normal;
+    background-size: cover;
+    color: #d6d5d5;
+    
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 650px;
+
+    text-align: center; 
+}
+
+.banner h2 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 2rem;
+}
+
+.scrolldown {
+    position: absolute;
+    left: calc(50%-52px);
+    margin-top: 15%;
+}
+
+.scrolldown img {
+    margin-bottom: 20px;
+}
+
+.scrolldown p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}

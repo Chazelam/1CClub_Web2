@@ -1,0 +1,50 @@
+.topheader {
+    z-index: 99999;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    background-color: white;
+    height: 140px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 300;
+    color: #696969;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    bottom: auto;
+}
+
+.logo>a>img {
+    margin-top: -10px;
+    padding-right: 10px;
+    height: 60px;
+}
+
+.logo>a {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: initial;
+}
+
+.banner {
+    background: #030303;
+    
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 650px;
+    height: auto;
+}
