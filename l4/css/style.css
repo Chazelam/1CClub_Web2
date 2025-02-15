@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'bignoodletitling';
+    src: url('../fonts/bignoodletitling.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.topheader {
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 140px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 300;
+    color: #696969;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    bottom: auto;
+}
+
+.logo>a>img {
+    margin-top: -10px;
+    padding-right: 10px;
+    height: 60px;
+}
+
+.logo>a {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: initial;
+}
+
+.banner {
+    background: url('../images/slider.jpg')  #696969;
+    background-blend-mode: multiply,normal;
+    background-size: cover;
+    color: #d6d5d5;
+    
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 650px;
+
+    text-align: center; 
+}
+
+.banner h2 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 2rem;
+}
+
+.scrolldown {
+    position: absolute;
+    left: calc(50%-52px);
+    margin-top: 15%;
+}
+
+.scrolldown img {
+    margin-bottom: 20px;
+}
+
+.scrolldown p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.logo, .bxslider>li, .aboutus>div>h3  {
+    font-family: 'bignoodletitling';
+}
+
+/* ------------------------------ */
+/* Блок "О Нас" */
+.head_white_content {
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+}
+
+.head_white_content>h3 {
+    font-family: 'bignoodletitling';
+}
+
+.head_white_content p {
+    color: #696969;
+    padding: 20px 90px 0px;
+}
+
+.head_white_content span {
+    display: inline-block;
+    width: 153px;
+    height: 3px;
+    background-color: #f4511e;
+}
+
+.adventage span {
+    font-size: 60px;
+    color: #f4511e;
+}
+
+.aboutus {
+    margin-bottom: 90px;
+}
+
+.adventage {
+    text-align: center;
+    width: 100%;
+    background: #ebebeb;
+    padding: 30px;
+    margin: 3% 0;
+}
+
+.adventage h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color: #707070;
+    padding: 25px 0 13px;
+}
+
+.adventage p {
+    color: #707070;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+
+/* О Нас */
+.somefutures {
+    background-color: #171f23;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 60px 0;
+    display: block;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.head_black_content {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.head_black_content span {
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    margin: 25px auto 0;
+    background: #404040;
+}
+
+.numeral>div>span {
+    font-size: 60px;
+    color: #ff7062;
+    
+}
+
+.numeral>div>p {
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 100;
+}
+
+.numeral>div>h5 {
+    font-size: 35px;
+    font-weight: 100;
+}
