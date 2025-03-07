@@ -1,26 +1,31 @@
 <?php
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$msg = $_POST['msg'];
+// Проверяем, были ли переданы данные
+if (!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['msg'])) {
+    echo json_encode(['Status' => 'error', 'Message' => 'Missing data']);
+    exit;
+}
 
-$name = trim(urldecode(htmlspecialchars($name)));
-$email = trim(urldecode(htmlspecialchars($email)));
-$msg = trim(urldecode(htmlspecialchars($msg)));
+// Обрабатываем данные
+$name = trim(urldecode(htmlspecialchars($_POST['name'])));
+$email = trim(urldecode(htmlspecialchars($_POST['email'])));
+$msg = trim(urldecode(htmlspecialchars($_POST['msg'])));
 
-if (mail("panfav40@gmail.com", 
-    "Запрос с сайта",
-    "<h1>На сайт поступила новая заявка</h1>
-    <br>от: <b>".$name."</b>
-    <br>e-mail: <b>".$e-mail."</b>
-    <br>пользователь оставил комментарий: ".$msg."
-    <br><h2>Свяжитесь с ним как можно быстрей</h2>",
-    "From: Робот-охранник сайта\r\n",
-    "Content-type: text/html\r\n")) 
-    {
-        echo '{"Status":"ok"}';
+// Генерируем имя файла
+$filename = 'заявка_' . date('Y-m-d_H-i-s') . '.txt';
+
+// Формируем содержимое файла
+$content = "На сайт поступила новая заявка\n";
+$content .= "от: " . $name . "\n";
+$content .= "e-mail: " . $email . "\n";
+$content .= "пользователь оставил комментарий: " . $msg . "\n";
+$content .= "Свяжитесь с ним как можно быстрей\n";
+
+// Пытаемся сохранить файл
+if (file_put_contents($filename, $content)) {
+    echo json_encode(['Status' => 'ok']);
 } else {
-    echo '{"Status":"error"}';
-};
+    echo json_encode(['Status' => 'error', 'Message' => 'Failed to save file']);
+}
 
 ?>
