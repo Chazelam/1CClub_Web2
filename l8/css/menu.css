@@ -1,0 +1,23 @@
+.primary-nav-trigger .menu-icon {
+    display: inline-block;
+    background-color: black;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    width: 39px;
+    height: 2px;
+}
+
+.primary-nav-trigger .menu-icon::before, .primary-nav-trigger .menu-icon::after {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    content: '';
+}
+.primary-nav-trigger .menu-icon::before {
+    top: 9px;
+}
+.primary-nav-trigger .menu-icon::after {
+    top: -9px;
+}
