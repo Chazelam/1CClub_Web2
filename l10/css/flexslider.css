@@ -126,14 +126,14 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav .flex-prev {
-  background:url(../img/c-left.png) no-repeat;
+  background:url(../images/c-left.png) no-repeat;
    opacity: 1;
   left: -100px;
   text-indent:-9999px;
   outline:0;
 }
 .flex-direction-nav .flex-next {
-  background:url(../img/c-right.png) no-repeat;
+  background:url(../images/c-right.png) no-repeat;
   text-align: right;
   right:-100px;
   opacity: 1;

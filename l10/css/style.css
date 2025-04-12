@@ -52,7 +52,7 @@ body {
 }
 
 .banner {
-    background: url('../img/slider.jpg')  #696969;
+    background: url('../images/slider.jpg')  #696969;
     background-blend-mode: multiply,normal;
     background-size: cover;
     color: #d6d5d5;
@@ -330,7 +330,7 @@ h4 {
 
 
 .partners {
-    background-image: url('../img/cbanner.jpg');
+    background-image: url('../images/cbanner.jpg');
     display: block;
     background-size: cover;
     background-color: #171f23;

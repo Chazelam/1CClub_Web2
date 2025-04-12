@@ -72,12 +72,12 @@
 
 .bx-wrapper .bx-prev {
 	left: -70px;
-	background: url(../img/left.png) no-repeat;
+	background: url(../images/left.png) no-repeat;
 }
 
 .bx-wrapper .bx-next {
 	right: -70px;
-	background: url(../img/right.png) no-repeat;
+	background: url(../images/right.png) no-repeat;
 }
 
 .bx-wrapper .bx-controls-direction a {
