@@ -1,0 +1,87 @@
+.head_white_content {
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+}
+
+/* .head_white_content>h3 {
+    font-family: 'bignoodletitling';
+} */
+
+.head_white_content p {
+    color: #696969;
+    padding: 20px 90px 0px;
+}
+
+.head_white_content span {
+    display: inline-block;
+    width: 153px;
+    height: 3px;
+    background-color: #f4511e;
+}
+
+/* Блок контакты */
+
+.getintouch {
+    padding: 80px 0;
+}
+
+.textinput {
+    margin: 40px 0;
+}
+
+.textinput p, .textmsg p {
+    font-weight: 700;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.textinput p span, .textmsg p span {
+    color: #f6744b;
+    margin-left: 5px;
+}
+
+.textinput input {
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 90%;
+    height: 40px;
+    outline: 0;
+}
+
+.textmsg textarea {
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 95%;
+    height: 80px;
+    outline: 0;
+    padding-top: 10px;
+}
+
+.getintouch form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.submit {
+    width: 205px;
+    height: 50px;
+    letter-spacing: 1px;
+    background: #f6744b;
+    border: 1px solid #f6744b;
+    color: #fff;
+    display: block;
+    margin: 50px auto 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    color: #f6744b;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.textinput input:focus, .textmsg textarea:focus {
+    box-shadow: 0 1px 3px 4px rgba(246,116,75, 0.5);
+}

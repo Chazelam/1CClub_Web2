@@ -107,24 +107,22 @@ $("#send").on("click", function () {
   }
 });
 
-$(window).load(function(){
-  $('.preload').delay(5000).fadeOut("slow");
+function disableScroll() {
+  const originalOverflow = document.body.style.overflow;
 
-  function onScrollInit(items) {
-  items.each(function(){
-    let onElement = $(this),
-        osAnimationClass = osElement.attr('data-os-animation'),
-        osAnimationDelay = osElement.attr('data-os-animation-delay');
-    osElement.css({
-      'animation-delay': osAnimationDelay
-    });
-    osElement.waypoint(function(){
-      osElement.addClass('animated').addClass(osAnimationClass);
-    },{
-      triggerOnce: true,
-      offset: '90%'
-    });
-  });
+  document.body.style.overflow = 'hidden';
+
+  // Блокируем touch события для мобильных устройств
+  const preventDefault = (e) => e.preventDefault();
+  document.addEventListener('touchmove', preventDefault, { passive: false });
+
+  setTimeout(() => {
+      document.body.style.overflow = originalOverflow || '';
+      document.removeEventListener('touchmove', preventDefault);
+  }, 5000);
 }
-  onScrollInit($('.os-animation'));
+
+$(window).load(function(){
+  disableScroll();
+  $('.preload').delay(5000).fadeOut("slow");
 });
